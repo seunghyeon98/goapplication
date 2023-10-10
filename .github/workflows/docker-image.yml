@@ -16,9 +16,7 @@ jobs:
         uses : actions/setup-go@v3
         with :
           go-version: 1.15 
-
-      # python에서 이 부분은
-      # run: pip install -r requirements.txt로 수정된다.
+	  
       - name: Build
         run: go build -v ./...
         
